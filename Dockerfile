@@ -1,5 +1,5 @@
 # ---- Dependencies ----
-FROM node:16-alpine AS build
+FROM node:16-alpine AS dependencies
 WORKDIR /app
 COPY package.json ./
 RUN npm i -g pnpm
